@@ -1,0 +1,134 @@
+    .register-container {
+        padding: 30px;
+        width: 400px;
+        max-width: 90%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .register-container h2 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .social-buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .social-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .social-button.google {
+        background: #db4437;
+    }
+
+    .social-button.facebook {
+        background: #4267b2;
+    }
+
+    .social-button.github {
+        background: #000;
+    }
+    
+    .social-button.telegram {
+        background: #0088cc;
+    }
+    .social-login {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+    }
+
+    .social-login button {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .divider {
+        margin: 20px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .divider::before, .divider::after {
+        content: "";
+        flex: 1;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .divider::before {
+        margin-right: 10px;
+    }
+
+    .divider::after {
+        margin-left: 10px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+        text-align: left;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+
+    .form-group small {
+        display: block;
+        margin-top: 5px;
+        color: #888;
+    }
+
+    .checkbox-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .checkbox-group input {
+        margin-right: 10px;
+    }
+
+    .register-button {
+        width: 100%;
+        padding: 12px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 8px;
+        background: #e53935;
+        color: #fff;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+    .register-button:hover {
+        background: #d32f2f;
+    }

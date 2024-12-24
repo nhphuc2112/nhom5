@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+
+    <style>
+        body {
+            font-family: "Roboto", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            background: #fff;
+            margin-top: 50px;
+        }
+        
+        .register-container {
+            padding: 30px;
+            width: 400px;
+            max-width: 90%;
+            text-align: center;
+        }
+        
+        .register-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .social-buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .social-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            color: #fff;
+        }
+        
+        .social-button.google {
+            background: #db4437;
+        }
+        
+        .social-button.facebook {
+            background: #4267b2;
+        }
+        
+        .social-button.github {
+            background: #000;
+        }
+        
+        .social-button.telegram {
+            background: #0088cc;
+        }
+        
+        .social-login {
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 20px;
+        }
+        
+        .social-login button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .divider {
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .divider::before,
+        .divider::after {
+            content: "";
+            flex: 1;
+            border-bottom: 1px solid #ccc;
+        }
+        
+        .divider::before {
+            margin-right: 10px;
+        }
+        
+        .divider::after {
+            margin-left: 10px;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        
+        .form-group small {
+            display: block;
+            margin-top: 5px;
+            color: #888;
+        }
+        
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 15px;
+        }
+        
+        .checkbox-group input {
+            margin-right: 10px;
+        }
+        
+        .register-button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 8px;
+            background: #e53935;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        
+        .register-button:hover {
+            background: #d32f2f;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: black">
+                    <h1>LaptopStore</h1>
+                </a>
+            </div>
+
+            <!-- Desktop Menu -->
+            <ul class="nav-menu">
+                <li><a href="/index.html">Trang chủ</a></li>
+                <li><a href="/about.html">Về chúng tôi</a></li>
+                <li class="has-dropdown">
+                    <a href="#products">Sản phẩm <i class="fa-solid fa-chevron-down"></i
+            ></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/gaming.html">Laptop Gaming</a></li>
+                        <li><a href="/office.html">Laptop Văn Phòng</a></li>
+                        <li><a href="/design.html">Laptop Đồ Họa</a></li>
+                        <li><a href="/student.html">Laptop Sinh Viên</a></li>
+                        <li><a href="/workstation.html">Laptop Doanh Nhân</a></li>
+                    </ul>
+                </li>
+                <li><a href="/sale.html">Khuyến mãi</a></li>
+                <li><a href="/contact.html">Liên hệ</a></li>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="/index.html">Trang chủ</a></li>
+                <li><a href="/about.html">Về chúng tôi</a></li>
+                <li>
+                    <a href="#products">Sản phẩm <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="mobile-submenu">
+                        <li><a href="/gaming.html">Laptop Gaming</a></li>
+                        <li><a href="/office.html">Laptop Văn Phòng</a></li>
+                        <li><a href="/design.html">Laptop Đồ Họa</a></li>
+                        <li><a href="/student.html">Laptop Sinh Viên</a></li>
+                        <li><a href="/workstation.html">Laptop Workstation</a></li>
+                    </ul>
+                </li>
+                <li><a href="/sale.html">Khuyến mãi</a></li>
+                <li><a href="/contact.html">Liên hệ</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="register-container">
+        <h2>Đăng ký</h2>
+
+        <div class="social-login">
+            <button class="social-button google">
+          <i class="fa-brands fa-google"></i>
+        </button>
+            <button class="social-button facebook">
+          <i class="fa-brands fa-facebook"></i>
+        </button>
+            <button class="social-button github">
+          <i class="fa-brands fa-github"></i>
+        </button>
+            <button class="social-button telegram">
+          <i class="fa-brands fa-telegram"></i>
+        </button>
+        </div>
+
+        <div class="divider">hoặc</div>
+
+        <form>
+            <div class="form-group">
+                <label for="fullname">Họ và Tên</label>
+                <input type="text" id="fullname" placeholder="Nhập họ và tên" required />
+            </div>
+            <div class="form-group">
+                <label for="phone">Số điện thoại</label>
+                <input type="tel" id="phone" placeholder="Nhập số điện thoại" required />
+                <small>Vui lòng không bỏ trống</small>
+            </div>
+            <div class="form-group">
+                <label for="email">Email (không bắt buộc)</label>
+                <input type="email" id="email" placeholder="Nhập email" />
+                <small>Hóa đơn VAT sẽ được gửi qua email này</small>
+            </div>
+            <div class="form-group">
+                <label for="dob">Ngày sinh</label>
+                <input type="date" id="dob" required />
+            </div>
+            <div class="form-group">
+                <label for="password">Mật khẩu</label>
+                <input type="password" id="password" placeholder="Nhập mật khẩu" required />
+                <small>Mật khẩu tối thiểu 6 ký tự, có ít nhất 1 chữ và 1 số (VD:
+            12345a)</small
+          >
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">Nhập lại mật khẩu</label>
+          <input
+            type="password"
+            id="confirm-password"
+            placeholder="Nhập lại mật khẩu"
+            required
+          />
+        </div>
+        <div class="checkbox-group">
+          <input type="checkbox" id="subscribe" />
+          <label for="subscribe">Đăng ký nhận bản tin khuyến mãi</label>
+        </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="student" />
+          <label for="student">Tôi là học sinh - sinh viên (Nhận nhiều ưu đãi)</label>
+        </div>
+        <div class="checkbox-group">
+          <input type="checkbox" id="terms" required />
+          <label for="terms">Tôi đồng ý với các điều khoản bảo mật cá nhân</label>
+        </div>
+        <button type="submit" class="register-button">Đăng ký</button>
+    </form>
+    <h4>Bạn đã có tài khoản? <a href="/login.html" style="text-decoration: none; color: red;">Vui lòng nhấn vào đây</a></h4>
+    </div>
+  </body>
+</html>
