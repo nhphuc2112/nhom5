@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CKEditor Example</title>
+    <!-- CKEditor CDN -->
+    <script src="https://cdn.ckeditor.com/4.21.0/standard/ckeditor.js"></script>
+</head>
+
+<body>
+    <h1>CKEditor Example</h1>
+    <!-- Textarea để CKEditor thay thế -->
+    <textarea name="editor1" id="editor1" rows="10" cols="80">
+        Đây là nội dung mẫu trong CKEditor!
+    </textarea>
+
+    <script>
+        // Khởi tạo CKEditor
+        CKEDITOR.replace('editor1');
+    </script>
+</body>
+
+</html>

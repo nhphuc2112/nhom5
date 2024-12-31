@@ -573,9 +573,7 @@ li {
 .product-info-content {
     color: var(--white);
     padding: 2rem;
-    background: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
-    backdrop-filter: blur(10px);
 }
 
 .product-info-content h2 {
@@ -801,4 +799,3 @@ li {
     background: var(--white);
     color: var(--primary-color);
 }
-
